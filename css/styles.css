@@ -1,0 +1,254 @@
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/************* 375PX ***********/
+
+body{
+    font-size: 16px;
+    
+}
+
+main{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--violet);
+}
+
+/************ STYLING THE LOGO ***************************/
+header{
+    margin: 2rem 0 4rem -11rem;
+}
+
+header img{
+    width: 100px;
+}
+
+
+/********************* STYLING THE CONTENT *********************/
+.content{
+    padding: 0 1rem;
+    color: white;
+    text-align: center;
+}
+
+.window{
+    margin-top: -1rem;
+}
+.window img{
+    max-width: 320px;
+}
+
+.text h1{
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.text .subtext{
+    font-weight: 400;
+    padding: 0 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/********************** STYLING THE BUTTON ******************/
+
+button{
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--violet);
+    width: 60%;
+    padding: .8rem;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0px 7px 2px 0px hsl(257, 41%, 44%);
+}
+
+button:hover{
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+/************************* STYLING THE FOOTER ************************/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: -2rem;
+}
+
+ul{
+    display: flex;
+   list-style-type: none;
+}
+
+li{
+    padding-right: 1rem;
+}
+
+a{
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 100%;
+    color: white;
+}
+
+a:hover{
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
+
+
+/***************** RESPONSIVENESS ************************/
+
+
+/**************** 800PX *******************/
+
+@media only screen and (min-width:800px) {
+    body {
+        background-color: var(--violet);
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main{
+        background-image: url(./images/bg-desktop.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+
+    header{
+        margin-left: 2rem 0rem 4rem 0;
+    }
+
+    .window img{
+        max-width: 420px;
+    }
+
+    header img{
+        width: 170px;
+    }
+
+    button{
+        width: 30%;
+    }
+
+    footer{
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+
+
+
+
+/************ 1400PX *************/
+
+@media only screen and (min-width:1300px){
+
+    body{
+        background-color: var(--violet);
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main{
+        background-image: url(./images/bg-desktop.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+
+    header{
+        display: flex;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        margin-left: -64rem;
+    }
+
+    header img{
+        width: 100%;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        padding: 0 5rem;
+    }
+
+    .window img{
+        max-width: 100%;
+    }
+
+    .text{
+        text-align: left;
+        margin-left: 1.2rem;
+    }
+
+    .text h1{
+        font-size: 2.4rem;
+        padding: 0 8rem 0 0rem;
+        margin-left: 1rem;
+    }
+
+    .text .subtext{
+        padding: 0 9rem 0 0rem;
+        margin-left: 1.1rem;
+    }
+
+    button{
+        margin-left: 1rem;
+        width: 28%;
+    }
+
+    footer{
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+        margin-left: 54rem;
+    }
+}
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
